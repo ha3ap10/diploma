@@ -1,0 +1,18 @@
+2022.02.27 13:58:59:659 INFO: Success transfer: ID: 20958c31-fb7f-4e89-8266-738453a4f444 Transfer(cardFromNumber=1234567891234567, cardToNumber=4567891234567891, cardFromCVV=123, cardFromValidTill=12/23, amount=Amount(currency=RUR, value=1000000))
+2022.02.27 13:59:02:735 ERROR: Input data
+2022.02.27 13:59:07:071 ERROR: Confirmation
+2022.02.28 00:32:34:673 INFO: Success transfer: ID: 0f4aa37e-8086-49a7-84ea-884eeb9b0e62 Transfer(cardFromNumber=1234567891234567, cardToNumber=4567891234567891, cardFromCVV=123, cardFromValidTill=12/23, amount=Amount(currency=RUR, value=1000000))
+2022.02.28 00:32:35:547 INFO: Success transfer: ID: 727598ff-0f67-43e5-8146-3935e213eef3 Transfer(cardFromNumber=1234567891234567, cardToNumber=4567891234567891, cardFromCVV=123, cardFromValidTill=12/23, amount=Amount(currency=RUR, value=1000000))
+2022.02.28 00:32:36:401 INFO: Success transfer: ID: 81769767-7988-4b0b-9693-83f50c85de30 Transfer(cardFromNumber=1234567891234567, cardToNumber=4567891234567891, cardFromCVV=123, cardFromValidTill=12/23, amount=Amount(currency=RUR, value=1000000))
+2022.02.28 00:32:37:457 ERROR: Input data
+2022.02.28 00:32:46:052 INFO: Success transfer: ID: a90de2d5-2b80-4472-a2a0-5ac132bcade0 Transfer(cardFromNumber=1234567891234567, cardToNumber=4567891234567891, cardFromCVV=123, cardFromValidTill=12/23, amount=Amount(currency=RUR, value=1000000))
+2022.02.28 00:32:46:800 INFO: Success transfer: ID: cae09ad5-0226-4ce4-8580-72d5d86625aa Transfer(cardFromNumber=1234567891234567, cardToNumber=4567891234567891, cardFromCVV=123, cardFromValidTill=12/23, amount=Amount(currency=RUR, value=1000000))
+2022.02.28 00:32:47:577 INFO: Success transfer: ID: b9645b76-c297-4bfb-a7be-d6bfd5d8907a Transfer(cardFromNumber=1234567891234567, cardToNumber=4567891234567891, cardFromCVV=123, cardFromValidTill=12/23, amount=Amount(currency=RUR, value=1000000))
+2022.02.28 00:32:54:904 ERROR: Confirmation
+2022.02.28 00:32:55:540 ERROR: Confirmation
+2022.02.28 00:33:04:550 INFO: Success transfer: ID: ddbb36d8-5ce4-4c9f-a2c5-adeed89d93d3 Transfer(cardFromNumber=1234567891234567, cardToNumber=4567891234567891, cardFromCVV=123, cardFromValidTill=12/23, amount=Amount(currency=RUR, value=1000000))
+2022.02.28 00:33:05:423 INFO: Success transfer: ID: 75550d95-a168-4ac6-8b8f-7591d9e64e1d Transfer(cardFromNumber=1234567891234567, cardToNumber=4567891234567891, cardFromCVV=123, cardFromValidTill=12/23, amount=Amount(currency=RUR, value=1000000))
+2022.03.03 23:38:03:914 INFO: Success transfer: ID: af0b2d02-8fc0-44cc-ae1d-21cb97dda8bc Transfer(cardFromNumber=1231321321321321, cardToNumber=3123213212313213, cardFromCVV=132, cardFromValidTill=10/25, amount=Amount(currency=RUR, value=1250000))
+2022.03.03 23:38:03:952 INFO: Success confirm: ID: af0b2d02-8fc0-44cc-ae1d-21cb97dda8bc
+2022.03.03 23:48:40:313 INFO: Success transfer: ID: 21ffebf3-cbae-4889-923c-b9c3b3478c65 Transfer(cardFromNumber=1231321321312132, cardToNumber=3213213212313213, cardFromCVV=123, cardFromValidTill=12/25, amount=Amount(currency=RUR, value=1250000))
+2022.03.03 23:48:40:351 INFO: Success confirm: ID: 21ffebf3-cbae-4889-923c-b9c3b3478c65

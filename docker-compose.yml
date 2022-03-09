@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  transfer_front:
+    image: 'transfer_front:0.1.0'
+    build:
+      context: ./
+      dockerfile: dockerfile_front
+    ports:
+      - 80:3000
+    container_name: transfer_front
+
+  transfer_back:
+    image: 'transfer_back:0.0.1'
+    build:
+      context: ./
+      dockerfile: dockerfile_back
+    ports:
+      - 5500:5500
+    volumes:
+      - ./src/main/resources/file.log:/app/file.log
+    container_name: transfer_back

@@ -8,11 +8,10 @@ import java.util.Date;
 public class Logger {
 
     private static Logger logger;
-    private static String logFileName;
-    private static final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss:SSS");
+    private static final String LOG_FILE_NAME = "file.log";
+    private static final SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss:SSS");
 
     private Logger() {
-        logFileName = "src\\main\\resources\\file.log";
     }
 
     public static Logger getInstance() {
@@ -20,9 +19,9 @@ public class Logger {
         return logger;
     }
 
-    public void log(String msg) {
-        String date = simpleDateFormat.format(new Date());
-        try (FileWriter fw = new FileWriter(logFileName, true)) {
+    public void info(String msg) {
+        String date = SIMPLE_DATE_FORMAT.format(new Date());
+        try (FileWriter fw = new FileWriter(LOG_FILE_NAME, true)) {
             fw.write(date + " INFO: " + msg + "\n");
             fw.flush();
         } catch (IOException e) {
@@ -31,8 +30,8 @@ public class Logger {
     }
 
     public void error(String msg) {
-        String date = simpleDateFormat.format(new Date());
-        try (FileWriter fw = new FileWriter(logFileName, true)) {
+        String date = SIMPLE_DATE_FORMAT.format(new Date());
+        try (FileWriter fw = new FileWriter(LOG_FILE_NAME, true)) {
             fw.write(date + " ERROR: " + msg + "\n");
             fw.flush();
         } catch (IOException e) {

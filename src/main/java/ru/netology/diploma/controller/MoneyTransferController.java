@@ -9,6 +9,8 @@ import ru.netology.diploma.model.*;
 import ru.netology.diploma.service.MoneyTransferService;
 
 
+//@CrossOrigin(origins = "https://serp-ya.github.io")
+@CrossOrigin(origins = "http://localhost")
 @RestController
 public class MoneyTransferController {
     private MoneyTransferService service;
@@ -21,21 +23,21 @@ public class MoneyTransferController {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     ErrorMessage errorMessage(ErrorInputData exception) {
         return new ErrorMessage(exception.getMessage(),
-                Integer.parseInt(HttpStatus.BAD_REQUEST.toString()));
+                HttpStatus.BAD_REQUEST.value());
     }
 
     @ExceptionHandler(ErrorTransfer.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     ErrorMessage errorMessage(ErrorTransfer exception) {
         return new ErrorMessage(exception.getMessage(),
-                500);
+                HttpStatus.INTERNAL_SERVER_ERROR.value());
     }
 
     @ExceptionHandler(ErrorConfirmation.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     ErrorMessage errorMessage(ErrorConfirmation exception) {
         return new ErrorMessage(exception.getMessage(),
-                Integer.parseInt(HttpStatus.INTERNAL_SERVER_ERROR.toString()));
+                HttpStatus.INTERNAL_SERVER_ERROR.value());
     }
 
     @PostMapping("/transfer")
